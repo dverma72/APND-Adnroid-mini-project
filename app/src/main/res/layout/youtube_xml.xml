@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <view
+                android:id="@+id/view"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/play"
+                android:text="Paly A.I"
+                android:background="@drawable/custom_button"
+                android:textAllCaps="false"
+                android:textSize="25dp"/>
+            <view
+                android:id="@+id/view1"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/play1"
+                android:text="Paly Song"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button"
+                android:textSize="25dp"/>
+            <view
+                android:id="@+id/view2"
+                class="com.google.android.youtube.player.YouTubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/play2"
+                android:text="Android Play List"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button"
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
