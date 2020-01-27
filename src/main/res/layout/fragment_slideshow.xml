@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<!--    tools:context=".youtube">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_slideshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:text="For Practices"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:background="@drawable/custom_button"
+                android:text="Gallery"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/gridview"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Gridview"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/xyz"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Youtube"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/aboutus"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Tic Tac game"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/music"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Music"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnvolleydemo"
+                android:layout_width="300dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Volley Demo"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

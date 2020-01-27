@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homecare"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/med_logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay_med_name">
+                <EditText
+                    android:id="@+id/med_name"
+                    android:layout_width="match_parent"
+                    android:hint="Medicine Name"
+                    android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay_qua">
+
+                <EditText
+                    android:id="@+id/quatity"
+                    android:hint="Quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and time when your are available"
+
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay_datefrom">
+
+
+                    <EditText
+                        android:id="@+id/datefrom"
+                        android:layout_width="145dp"
+                        android:layout_height="42dp"
+                        android:focusable="false"
+                        android:hint="Select date from" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay_dateto">
+
+                <EditText
+                    android:id="@+id/dateto"
+                    android:layout_width="145dp"
+                    android:hint="Select date to"
+                    android:layout_marginLeft="20dp"
+                    android:focusable="false"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:id="@+id/date_img"/>
+
+
+                <!--        <DatePicker-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:visibility="gone"-->
+                <!--            android:id="@+id/datepicker"/>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                >
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_from">
+
+                    <EditText
+                        android:id="@+id/timefrom"
+                        android:hint="Select time from"
+                        android:textAllCaps="true"
+                       android:focusable="false"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_to">
+                <EditText
+                android:id="@+id/timeto"
+                android:hint="Select time to"
+                    android:textAllCaps="true"
+                    android:focusable="false"
+                    android:layout_marginLeft="20dp"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content" />
+</com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:id="@+id/time_img"/>
+
+                <!--        <TimePicker-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:visibility="gone"-->
+                <!--            android:id="@+id/timepicker"/>-->
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_adre">
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:lines="3"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:scrollbars="vertical"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:text="order"
+                android:textAllCaps="false"
+                android:id="@+id/order"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout><!--        android:text="Submit"-->
+    <!--        android:textColor="@drawable/custom_button"-->

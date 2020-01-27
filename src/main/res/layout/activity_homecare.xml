@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homecare"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:src="@drawable/homecare"
+    android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:hint="Select date of appointment -->"
+            android:focusable="false"
+            android:layout_height="wrap_content" /></com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:id="@+id/date_img"/>
+
+
+<!--        <DatePicker-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/datepicker"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/time"
+            android:focusable="false"
+            android:layout_width="300dp"
+            android:textAllCaps="true"
+            android:hint="Select time of appointment -->"
+            android:layout_height="wrap_content"
+           /></com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_access_time_black_24dp"
+            android:id="@+id/time_img"/>
+
+
+<!--        <TimePicker-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/timepicker"/>-->
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:lines="3"
+        android:hint="Enter Your Address"
+        android:layout_height="wrap_content"
+        /></com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+         android:id="@+id/submit"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout><!--        android:text="Submit"-->
+    <!--        android:textColor="@drawable/custom_button"-->
